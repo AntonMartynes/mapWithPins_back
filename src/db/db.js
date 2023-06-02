@@ -1,15 +1,16 @@
 import pkg from 'pg';
+import 'dotenv/config'
 const { Client } = pkg;
 
 const client = new Client({
-  connectionString: 'postgres://zfpvqiuoinhoyy:68d94a690217394f4376454c37b347b3d4aa2b0b9e4c4e43f9451cc7b5e72fbf@ec2-52-215-68-14.eu-west-1.compute.amazonaws.com:5432/d3dmmvu4ppv9k',
+  connectionString: process.env.CONNECTION_STRING,
   ssl: {
     rejectUnauthorized: false
   },
-  user: process.env.DB_USERNAME || "zfpvqiuoinhoyy",
-  host: process.env.DB_HOST || 'ec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
-  database: process.env.DB_BDNAME || 'd3dmmvu4ppv9k',
-  password: process.env.DB_PASSWORD || '68d94a690217394f4376454c37b347b3d4aa2b0b9e4c4e43f9451cc7b5e72fbf',
+  user: process.env.DB_USERNAME,
+  host: process.env.DB_HOST,
+  database: process.env.DB_BDNAME,
+  password: process.env.DB_PASSWORD,
   port: 5432,
 });
 
