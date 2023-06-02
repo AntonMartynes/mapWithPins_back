@@ -35,14 +35,12 @@ Start Server
 ```sh
 npm start
 ```
-Start Project
-```sh
-run a project from this repository in parallel https://github.com/AntonMartynes/mapWithPins_front.git
-```
 ## Technologies used
 The project uses the following technologies: 
 
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+  
+  ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
   	
   ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
    
