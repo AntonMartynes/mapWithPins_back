@@ -3,14 +3,14 @@ import 'dotenv/config'
 const { Client } = pkg;
 
 const client = new Client({
-  connectionString: 'postgres://zfpvqiuoinhoyy:68d94a690217394f4376454c37b347b3d4aa2b0b9e4c4e43f9451cc7b5e72fbf@ec2-52-215-68-14.eu-west-1.compute.amazonaws.com:5432/d3dmmvu4ppv9k',
+  connectionString: 'postgres://czxkmmszrguixh:20f998c6b041b0b07c3888cc57fe970aa6eae1d2736ae3c651f588bf1f536cc6@ec2-34-240-122-104.eu-west-1.compute.amazonaws.com:5432/d2ei70d1elghjo',
   ssl: {
     rejectUnauthorized: false
   },
-  user: process.env.DB_USERNAME || "zfpvqiuoinhoyy",
-  host: process.env.DB_HOST || 'ec2-52-215-68-14.eu-west-1.compute.amazonaws.com',
-  database: process.env.DB_BDNAME || 'd3dmmvu4ppv9k',
-  password: process.env.DB_PASSWORD || '68d94a690217394f4376454c37b347b3d4aa2b0b9e4c4e43f9451cc7b5e72fbf',
+  user: process.env.DB_USERNAME || "czxkmmszrguixh",
+  host: process.env.DB_HOST || 'ec2-34-240-122-104.eu-west-1.compute.amazonaws.com',
+  database: process.env.DB_BDNAME || 'd2ei70d1elghjo',
+  password: process.env.DB_PASSWORD || '20f998c6b041b0b07c3888cc57fe970aa6eae1d2736ae3c651f588bf1f536cc6',
   port: 5432,
 });
 
